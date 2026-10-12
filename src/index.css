@@ -296,14 +296,14 @@ section:last-child {
   font-size: clamp(4rem, 11vw, 9rem);
   font-weight: 900;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(198, 140, 66, 0.14);
+  -webkit-text-stroke: 1.5px rgba(198, 140, 66, 0.38);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .hero-marquee-track span.marquee-dot {
   font-size: clamp(1.8rem, 4vw, 3.5rem);
-  color: rgba(198, 140, 66, 0.2);
+  color: rgba(198, 140, 66, 0.45);
   -webkit-text-stroke: 0;
 }
 

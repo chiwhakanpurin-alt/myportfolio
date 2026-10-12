@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Monitor, Cpu, Server, Mail, Phone, Menu, ArrowRight, ChevronLeft, ChevronRight, Maximize2, Award, X, Sparkles, Layers } from 'lucide-react';
 import { WorksWheel as ShadcnWorksWheel } from '@/components/ui/works-wheel';
+import Box3DLoader from '@/components/ui/3d-box-loader-animation';
 
 const GithubIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -17,24 +18,15 @@ const InstagramIcon = () => (
   </svg>
 );
 
-function Loader() {
+function PortfolioLoader() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', backgroundColor: '#000000' }}>
-      <div className="cube-loader-container">
-        <div className="cube-loader">
-          <div className="cube-face front"></div>
-          <div className="cube-face back"></div>
-          <div className="cube-face right"></div>
-          <div className="cube-face left"></div>
-          <div className="cube-face top"></div>
-          <div className="cube-face bottom"></div>
-        </div>
-      </div>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <Box3DLoader />
       <motion.div
         initial={{ opacity: 0.3 }}
         animate={{ opacity: 1 }}
         transition={{ repeat: Infinity, duration: 0.8, repeatType: 'reverse' }}
-        style={{ color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'var(--font-mono)', fontSize: '1rem', letterSpacing: '6px', marginTop: '60px' }}
+        style={{ color: '#111111', fontFamily: 'var(--font-mono)', fontSize: '0.9rem', letterSpacing: '8px', marginTop: '24px', fontWeight: 600 }}
       >
         LOADING...
       </motion.div>
@@ -574,7 +566,7 @@ function App() {
               zIndex: 9999,
               width: '100%',
               height: '100%',
-              background: appState === 'loading' ? '#000000' : '#ffffff',
+              background: appState === 'loading' ? '#e5e7eb' : '#ffffff',
               transition: 'background 0.5s ease',
               display: 'flex',
               justifyContent: 'center',
@@ -588,7 +580,7 @@ function App() {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <Loader />
+                  <PortfolioLoader />
                 </motion.div>
               )}
               {appState === 'intro' && (

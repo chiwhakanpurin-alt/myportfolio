@@ -166,10 +166,11 @@ function Hero() {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <div className="tagline">Hello, I'm</div>
-        <h1>ภูรินทร์ ชิวหากาญจน์</h1>
+        <h1>Purin</h1>
+        <h2>Chiwhakan</h2>
         <h2>Don’t say you can’t do it if you haven’t even tried.</h2>
         <p className="desc">
-          ผมชื่อภูรินทร์ นักเรียนชั้น ม.6 ที่สนใจด้าน AI,
+          ผมชื่อภูรินทร์ นักเรียนชั้น ม.6 ที่สนใจด้าน AI, IT
           <br />ชอบเขียนโค้ดเพื่อแก้ไขปัญหาในชีวิตประจำวัน
         </p>
         <div className="hero-buttons">

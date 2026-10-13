@@ -281,14 +281,14 @@ function About() {
           <h3 style={{ marginBottom: '1.5rem', color: '#ffffff' }}>ประวัติการศึกษา</h3>
           <div className="timeline">
             <div className="timeline-item">
-              <span className="timeline-date">202X - Present</span>
+              <span className="timeline-date">2025 - Present</span>
               <h4>โรงเรียนพรหมคีรีพิทยาคม</h4>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>แผนการเรียน: วิทยาศาสตร์ - คณิตศาสตร์</p>
               <p style={{ marginTop: '0.5rem' }}><strong>GPAX:</strong> 3.60</p>
               <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}></p>
             </div>
             <div className="timeline-item">
-              <span className="timeline-date">201X - 202X</span>
+              <span className="timeline-date">2022 - 2024</span>
               <h4>โรงเรียนพรหมคีรีพิทยาคม</h4>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>ระดับชั้นมัธยมศึกษาตอนต้น</p>
               <p style={{ marginTop: '0.5rem' }}><strong>GPAX:</strong> 3.51</p>

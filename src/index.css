@@ -1056,6 +1056,40 @@ img.project-img {
   z-index: 5;
 }
 
+/* Quote overlay above robot */
+.spline-quote-overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 25%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+  max-width: 700px;
+  width: 90%;
+}
+
+.spline-quote-en {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7), 0 0 40px rgba(0, 0, 0, 0.5);
+  margin: 0 0 0.6rem 0;
+}
+
+.spline-quote-th {
+  font-size: clamp(0.75rem, 1.2vw, 0.92rem);
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
 /* ==========================================================================
    Works Wheel (Compact 3D Cylindrical Certificate Showcase)
    ========================================================================== */
@@ -1460,26 +1494,27 @@ img.project-img {
   .wheel-viewport {
     height: 440px;
   }
+
   .wheel-carousel {
     width: 270px;
     height: 380px;
   }
+
   .wheel-card {
     width: 260px;
     height: 370px;
     padding: 0.9rem;
   }
+
   .wheel-img-wrap {
     height: 160px;
   }
+
   .wheel-card-info h4 {
     font-size: 0.88rem;
   }
+
   .wheel-card-info p {
     font-size: 0.74rem;
   }
 }
-
-
-
-

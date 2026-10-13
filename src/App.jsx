@@ -167,11 +167,11 @@ function Hero() {
       >
         <div className="tagline">Hello, I'm</div>
         <h1>Purin</h1>
-        <h2>Chiwhakan</h2>
+        <h1>Chiwhakan</h1>
         <h2>Don’t say you can’t do it if you haven’t even tried.</h2>
         <p className="desc">
           ผมชื่อภูรินทร์ นักเรียนชั้น ม.6 ที่สนใจด้าน AI, IT
-          <br />ชอบเขียนโค้ดเพื่อแก้ไขปัญหาในชีวิตประจำวัน
+          <br />ชอบเขียน Code เพื่อแก้ไขปัญหาในชีวิตประจำวัน
         </p>
         <div className="hero-buttons">
           <a href="#projects" className="btn-primary">View selected projects ↗</a>
@@ -179,21 +179,7 @@ function Hero() {
         </div>
       </motion.div>
 
-      {/* info bar ด้านล่าง */}
-      <div className="hero-bottom-bar">
-        <div className="hero-bottom-left">
-          <strong>M.6 Student</strong>
-          <p>AI, Robotics &amp; Embedded Systems</p>
-          <p>Nakhon Si Thammarat, Thailand</p>
-        </div>
-        <div className="hero-scroll">
-          SCROLL TO EXPLORE ↓
-        </div>
-        <div className="hero-bottom-right">
-          <p>Portfolio 2026</p>
-          <strong>Purin Chiwhakan</strong>
-        </div>
-      </div>
+
     </section>
   );
 }
@@ -247,6 +233,18 @@ function SplineSection() {
       <div className="spline-fade-top" aria-hidden="true"></div>
       <div className="spline-blur-bottom" aria-hidden="true"></div>
       <div className="spline-fade-bottom" aria-hidden="true"></div>
+
+      {/* Quote overlay above robot */}
+      <motion.div
+        className="spline-quote-overlay"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
+        <p className="spline-quote-en">Don't just believe, prove it. Take action, and the results will show.</p>
+        <p className="spline-quote-th">อย่าแค่เชื่อ แต่จงพิสูจน์ ลงมือทำ แล้วผลลัพธ์จะแสดงออกมาเอง</p>
+      </motion.div>
     </section>
   );
 }

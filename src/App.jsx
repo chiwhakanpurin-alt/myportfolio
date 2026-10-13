@@ -604,7 +604,6 @@ function App() {
           transition={{ duration: 1 }}
           style={{ position: 'relative', zIndex: 1 }}
         >
-          <Navbar />
           <Hero />
           <SplineSection />
           <About />
